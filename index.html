@@ -452,7 +452,7 @@ async function initializeApp() {
         ]);
 
         // Update location display
-        // document.getElementById('location-text').textContent = locationName || "Location found! 📍 (Name unavailable)";
+        document.getElementById('location-text').textContent = locationName || "Location found! 📍 (Name unavailable)";
 
         if (!sunTimes || !fajrTime) {
             throw new Error("Could not fetch prayer times or sun times");
